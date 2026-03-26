@@ -6,18 +6,18 @@
   <title>點點工具｜批次裁切、擷取、合併工具</title>
   <meta name="description" content="支援批次處理 PDF / PNG / JPG / HTML，自動完成裁切、擷取、合併與排版輸出，適合股東會電子投票截圖整理與一般文件批次整理需求。" />
   <style>
-    :root {
-      --bg: #fffaf5;
-      --card: #ffffff;
-      --line: #eadfd2;
-      --text: #2d2d2d;
-      --muted: #6b7280;
-      --primary: #d97706;
-      --primary-dark: #b45309;
-      --accent: #fff7ed;
-      --shadow: 0 10px 28px rgba(15, 23, 42, 0.08);
-      --radius: 24px;
-    }
+  :root {
+  --bg: #f4f6fb;
+  --card: #ffffff;
+  --line: #d9dfeb;
+  --text: #2d2d2d;
+  --muted: #6b7280;
+  --primary: #3b6eea;
+  --primary-dark: #2f56c7;
+  --accent: #eef4ff;
+  --shadow: 0 10px 28px rgba(30, 41, 59, 0.08);
+  --radius: 24px;
+}
 
     * {
       box-sizing: border-box;
@@ -28,7 +28,7 @@
       font-family: "Microsoft JhengHei", "PingFang TC", sans-serif;
       color: var(--text);
       background:
-        radial-gradient(circle at top, #fff7ed 0%, #fffaf5 42%, #fffdf9 100%);
+  radial-gradient(circle at top, #eef4ff 0%, #f4f6fb 42%, #f8faff 100%);
       line-height: 1.7;
     }
 
@@ -52,7 +52,7 @@
       gap: 24px;
       align-items: stretch;
       background: rgba(255, 255, 255, 0.82);
-      border: 1px solid rgba(234, 223, 210, 0.9);
+      border: 1px solid rgba(217, 223, 235, 0.9);
       border-radius: 30px;
       box-shadow: var(--shadow);
       padding: 38px;
@@ -65,8 +65,8 @@
       gap: 8px;
       padding: 8px 14px;
       border-radius: 999px;
-      background: #fff1df;
-      color: var(--primary-dark);
+      background: #eef4ff;
+       color: var(--primary-dark);
       font-size: 14px;
       font-weight: 700;
       margin-bottom: 14px;
@@ -107,21 +107,17 @@
       transform: translateY(-1px);
     }
 
+  .btn-primary:hover {
+  background: var(--primary-dark);
+}
+
     .btn-primary {
-      background: var(--primary);
-      color: #fff;
-      box-shadow: 0 12px 24px rgba(217, 119, 6, 0.22);
-    }
+  background: var(--primary);
+  color: #fff;
+  box-shadow: 0 12px 24px rgba(59, 110, 234, 0.22);
+}
 
-    .btn-primary:hover {
-      background: var(--primary-dark);
-    }
 
-    .btn-secondary {
-      background: #fff;
-      border-color: #f3d6b4;
-      color: var(--primary-dark);
-    }
 
     .hero-note {
       margin-top: 8px;
