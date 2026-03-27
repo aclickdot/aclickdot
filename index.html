@@ -402,15 +402,26 @@ eef4ff;
           </p>
           <div class="hero-actions">
 <a class="btn btn-primary"
-   href="https://drive.google.com/uc?export=download&id=1jGWaQmg4mnaa4U5ciUztOolhATgkA_fO"
-   target="_blank"
-   rel="noopener noreferrer"
-   onclick="gtag('event', 'download_click', {
-     event_category: 'engagement',
-     event_label: 'free_download'
-   }); setTimeout(function(){}, 200);">
+   href="#"
+   onclick="handleDownload()">
    下載免費試用版
 </a>
+
+<script>
+function handleDownload() {
+  gtag('event', 'download_click', {
+    event_category: 'engagement',
+    event_label: 'free_download'
+  });
+
+  setTimeout(function() {
+    window.open(
+      "https://drive.google.com/uc?export=download&id=1jGWaQmg4mnaa4U5ciUztOolhATgkA_fO",
+      "_blank"
+    );
+  }, 300);
+}
+</script>
           </div>
           <div class="notice">
             ※ 下載檔案為 Windows EXE 執行檔，存放於雲端平台。<br>
